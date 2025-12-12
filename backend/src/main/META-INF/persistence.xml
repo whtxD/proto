@@ -6,13 +6,12 @@
 
     <persistence-unit name="ohhellPU" transaction-type="JTA">
         <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
-        <jta-data-source>java:jboss/datasources/OhHellDS</jta-data-source>
+        <jta-data-source>java:openejb/Resource/ohhell_postgres</jta-data-source>
 
         <class>com.ohhell.ohhellapi.models.Bid</class>
+        <class>com.ohhell.ohhellapi.models.Game</class>
         <class>com.ohhell.ohhellapi.models.Player</class>
         <class>com.ohhell.ohhellapi.models.Round</class>
-        <class>com.ohhell.ohhellapi.models.Game</class>
-        <!-- Agrega aquí todas tus entidades -->
 
         <properties>
             <property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQLDialect"/>
