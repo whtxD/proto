@@ -1,4 +1,4 @@
-package com.ohhell.ohhellapi.Services;
+package com.ohhell.ohhellapi.services;
 
 import com.ohhell.ohhellapi.dao.PlayerDAO;
 import com.ohhell.ohhellapi.dao.GameDAO;

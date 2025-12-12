@@ -282,7 +282,9 @@ public class PlayerDAO {
 
         return activePlayers;
     }
-
+    public Player findById(Long id) throws SQLException {
+        return getPlayerById(id);
+    }
     /**
      * Establece el dealer de una partida
      *

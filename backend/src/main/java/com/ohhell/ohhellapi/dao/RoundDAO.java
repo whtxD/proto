@@ -292,7 +292,13 @@ public class RoundDAO {
 
         return 0;
     }
+    public Round findById(Long id) throws SQLException {
+        return getRoundById(id);
+    }
 
+    public Round save(Round round) throws SQLException {
+        return createRound(round);
+    }
     /**
      * Obtiene la última ronda completada de una partida
      *

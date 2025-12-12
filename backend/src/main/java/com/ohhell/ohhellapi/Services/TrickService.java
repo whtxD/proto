@@ -1,4 +1,4 @@
-package com.ohhell.ohhellapi.Services;
+package com.ohhell.ohhellapi.services;
 
 import com.ohhell.ohhellapi.dao.TrickDAO;
 import com.ohhell.ohhellapi.dao.RoundDAO;
@@ -9,6 +9,7 @@ import com.ohhell.ohhellapi.models.Round;
 import com.ohhell.ohhellapi.models.Player;
 import com.ohhell.ohhellapi.models.Card;
 import com.ohhell.ohhellapi.models.Bid;
+import java.util.stream.Collectors;
 
 import java.sql.SQLException;
 import java.util.HashMap;
